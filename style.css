@@ -1,0 +1,333 @@
+.attribution { margin: 20px 0 20px;font-family:'Space Mono', monospace;
+    font-weight:700; text-align: center;}
+.attribution a { color: hsl(228, 45%, 44%); }
+body
+{
+    margin: 0;
+    background-color: hsl(185, 41%, 84%);
+}
+@media screen and (min-width: 375px) {
+    .main
+    {
+        background-color: white;
+        border-radius: 20px;
+        margin-top: 30%;
+        max-width: 25em;
+        margin: 0 auto;
+        overflow: hidden;
+
+    }
+    .input-container, .input_container_2, .tip-container
+    {
+        max-width: 300px;
+        margin: auto; 
+    }
+    .input-container, .input_container_2
+    { 
+        position: relative;
+    }
+    .input_container_2
+    {
+        top:7px;
+    }
+    .tip-container
+    {
+        margin:20px auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .bill
+    {
+        background-color: hsl(189, 41%, 97%);
+        border: none;
+        text-align: right;
+        font-size: 24px;
+        font-family:'Space Mono', monospace;
+        font-weight:700;
+        color:hsl(183, 100%, 15%);
+        width:98%;
+    }
+    h4{
+        margin-bottom: 2px;
+        font-size: 24px;
+    }
+    span{
+        position: absolute;    
+        left:15px;
+        bottom: 1px;
+    }
+    .tip-btn
+    {
+        width: 130px;
+        margin:7px;
+        padding:7px 0;
+        font-size: 22px;
+        font-family:'Space Mono', monospace;
+        font-weight:700;
+        border-radius: 5px;
+        border: none;
+        background-color: hsl(183, 100%, 15%);
+        color: white;
+    }
+    .custom-input
+    {
+        font-size: 22px; 
+        text-align: right;
+        margin:7px;
+        padding: 5px 0;
+        letter-spacing: 2px;
+        font-family:'Space Mono', monospace;
+        font-weight: 700;
+        background-color: hsl(189, 41%, 97%);
+        border: none;
+    }
+    .reset-container
+    {
+        max-width: 310px;
+        margin: 40px auto;
+        text-align: center;
+        border-radius: 10px;
+        background-color: hsl(183, 100%, 15%);
+        color: white;
+
+    }
+    #people
+    {
+        width:98%;
+        background-color: hsl(189, 41%, 97%);
+        border: none;
+        text-align: right;
+        font-size: 24px;
+        font-family:'Space Mono', monospace;
+        font-weight:700;
+        color:hsl(183, 100%, 15%);
+    }
+    #reset-btn
+    {
+        width: 250px; 
+        margin:20px auto; 
+        padding:10px 0;
+        background-color: hsl(172, 67%, 45%);
+        color: hsl(183, 100%, 15%);
+        font-family:'Space Mono', monospace;
+        font-weight:700;
+        font-size: large;
+        border: none;
+        border-radius: 5px;
+    }
+    .tip-amount, .total
+    {
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        max-width: 85%;
+        margin:auto;
+    }
+    .tip-amount
+    {
+        top: 20px;
+    }
+    .total
+    {
+        top:10px;
+    }
+    .select-tip
+    {
+        margin-bottom: 10px;
+        flex:100%;
+        font-family:'Space Mono', monospace;
+        font-weight:700;
+        color: hsl(186, 14%, 43%);
+    }
+    h5
+    {
+        color: hsl(184, 14%, 56%);
+        position: absolute;
+        bottom: 10px; 
+        margin:0;
+        font-family:'Space Mono', monospace;
+        font-weight:700;
+    }
+    h6
+    {
+        font-family:'Space Mono', monospace;
+        color: red;
+        margin-left: 45px;
+        margin-bottom: 5px;
+        display:inline-block;
+        opacity: 0;
+    }
+}
+@media screen and (min-width: 1440px){
+    .main
+    {
+        background-color: white;
+        border-radius: 20px;
+        max-width: 60em;
+        margin-top: 30%;
+        margin: 0 auto;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+    
+    }
+    .input-container, .input_container_2, .tip-container
+    {
+        max-width: 90%;
+        margin: auto; 
+    }
+    .select-tip
+    {
+        margin-bottom: 10px;
+        flex:100%;
+        font-family:'Space Mono', monospace;
+        font-weight:700;
+        color: hsl(186, 14%, 43%);
+    }
+    .input-container, .input_container_2
+    { 
+        position: relative;
+    }
+    .input_container_2
+    {
+        /* display: flex;
+        flex-wrap:nowrap; */
+        top:7px;
+    }
+    .tip-container
+    {
+        margin:20px auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .bill
+    {
+        background-color: hsl(189, 41%, 97%);
+        border: none;
+        text-align: right;
+        font-size: 24px;
+        font-family:'Space Mono', monospace;
+        font-weight:700;
+        color:hsl(183, 100%, 15%);
+        width:98%;
+    }
+    h4{
+        margin-bottom: 2px;
+        font-size: 24px;
+    }
+    span{
+        position: absolute;    
+        left:15px;
+        bottom: 1px;
+    }
+    .tip-btn
+    {
+        width: 130px;
+        margin:7px;
+        padding:7px 0;
+        font-size: 22px;
+        font-family:'Space Mono', monospace;
+        font-weight:700;
+        border-radius: 5px;
+        border: none;
+        background-color: hsl(183, 100%, 15%);
+        color: white;
+    }
+    .custom-input
+    {
+        font-size: 22px; 
+        text-align: right;
+        margin:7px;
+        padding: 5px 0;
+        letter-spacing: 2px;
+        font-family:'Space Mono', monospace;
+        font-weight: 700;
+        background-color: hsl(189, 41%, 97%);
+        border: none;
+    }
+    .first-container
+    {
+        flex: 1;
+        margin: 30px 0px 50px 25px;
+        max-width: 30em;
+    }
+    .reset-container
+    { 
+        flex: 1;
+        max-width: 25em;
+        margin: 30px 25px 30px 0px;
+        text-align: center;
+        border-radius: 10px;
+        background-color: hsl(183, 100%, 15%);
+        color: white;
+    
+    }
+    #people
+    {
+        width:98%;
+        background-color: hsl(189, 41%, 97%);
+        border:none;
+        text-align: right;
+        font-size: 24px;
+        font-family:'Space Mono', monospace;
+        font-weight:700;
+        color:hsl(183, 100%, 15%);
+    }
+    #reset-btn
+    {
+        width: 80%; 
+        margin:100px auto 0px; 
+        padding:10px 0;
+        background-color: hsl(172, 67%, 45%);
+        color: hsl(183, 100%, 15%);
+        font-family:'Space Mono', monospace;
+        font-weight:700;
+        font-size: large;
+        border: none;
+        border-radius: 5px;
+    }
+    #tip-per-person, #total-per-person
+    {
+        font-size: 34px;
+    }
+    .tip-amount, .total
+    {
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        max-width: 80%;
+        margin:auto;
+    }
+    .tip-amount
+    {
+        top: 20px;
+    }
+    .total
+    {
+        top:10px;
+    }
+    h5
+    {
+        color: hsl(184, 14%, 56%);
+        position: absolute;
+        bottom: 20px; 
+        margin:0;
+        font-family:'Space Mono', monospace;
+        font-weight:700;
+    }
+    h6
+    {
+        font-family:'Space Mono', monospace;
+        color: red;
+        margin-left: 175px;
+        margin-bottom: 5px;
+        display:inline-block;
+        opacity: 0;
+    }
+}
